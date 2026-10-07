@@ -49,11 +49,11 @@ export default function Hero({ founderPhoto }: HeroProps) {
         <div className="absolute inset-0 noise-overlay opacity-40" />
       </motion.div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+      <div className="relative z-10 max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 xl:gap-12 items-center">
           
           {/* Left Column: Brand Statement & Monumental Typography */}
-          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-7">
+          <div className="lg:col-span-7 min-w-0 flex flex-col items-center lg:items-start text-center lg:text-left space-y-7 pr-0 lg:pr-2">
             
             {/* Authentic Brand Crest Monogram */}
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#C6A85B]/30 bg-black/60 backdrop-blur-md">
@@ -65,11 +65,11 @@ export default function Hero({ founderPhoto }: HeroProps) {
               </div>
             </div>
 
-            {/* Monumental Headline */}
-            <div className="space-y-2">
-              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.2rem] font-serif-luxury font-black uppercase tracking-tight text-white leading-[1.02]">
+            {/* Monumental Headline - Proportionally scaled to fit without overlapping */}
+            <div className="space-y-2 max-w-full">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[3.4rem] xl:text-[4.1rem] font-serif-luxury font-black uppercase tracking-tight text-white leading-[1.05]">
                 RECUSAR A <br />
-                <span className="gold-gradient-text drop-shadow-[0_4px_30px_rgba(198,168,91,0.35)]">
+                <span className="gold-gradient-text drop-shadow-[0_4px_30px_rgba(198,168,91,0.35)] block mt-1">
                   MEDIOCRIDADE.
                 </span>
               </h1>
@@ -128,10 +128,10 @@ export default function Hero({ founderPhoto }: HeroProps) {
           </div>
 
           {/* Right Column: High-Impact Editorial Portrait with Smooth Parallax */}
-          <div className="lg:col-span-5 relative flex justify-center">
+          <div className="lg:col-span-5 relative flex justify-center lg:justify-end shrink-0">
             <motion.div
               style={{ y: reducedMotion ? 0 : smoothY }}
-              className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-[3/4] rounded-2xl overflow-hidden border border-[#C6A85B]/30 shadow-[0_20px_50px_rgba(0,0,0,0.9),0_0_30px_rgba(198,168,91,0.15)] group"
+              className="relative w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[380px] xl:max-w-[410px] aspect-[3/4] rounded-2xl overflow-hidden border border-[#C6A85B]/30 shadow-[0_20px_50px_rgba(0,0,0,0.9),0_0_30px_rgba(198,168,91,0.15)] group"
             >
               <img
                 src={founderPhoto}
