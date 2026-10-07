@@ -1,0 +1,8 @@
+{
+  "name": "Savage Community — Construa uma vida acima da média",
+  "description": "Uma comunidade para pessoas que escolheram evoluir. Mentalidade, disciplina, empreendedorismo, mercado digital e desenvolvimento pessoal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
